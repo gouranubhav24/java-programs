@@ -1,0 +1,12 @@
+class Solution {
+    int missingNumber(int array[], int n) {
+        // Your Code Here
+        int expectedsum = (n*(n+1))/2;
+        int actualsum=0;
+        for(int num:array)
+        {
+            actualsum+=num;
+        }
+        return expectedsum - actualsum;
+    }
+}
